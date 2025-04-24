@@ -1,0 +1,84 @@
+import javax.swing.*;
+//import java.awt.*;
+import java.awt.event.*;
+
+public class ButtonAction extends JFrame {
+    private JLabel label;
+
+    public ButtonAction() {
+        label = new JLabel("");
+
+        JButton redButton = new JButton("RED");
+        redButton.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                label.setText("RED");
+            }
+        });
+
+        JButton blueButton = new JButton("BLUE");
+        blueButton.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                label.setText("BLUE");
+            }
+        });
+
+        JButton greenButton = new JButton("GREEN");
+        greenButton.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                label.setText("GREEN");
+            }
+        });
+
+        JPanel panel = new JPanel();
+        panel.add(redButton);
+        panel.add(blueButton);
+        panel.add(greenButton);
+        panel.add(label);
+
+        add(panel);
+        pack();
+        setVisible(true);
+    }
+
+    public static void main(String[] args) {
+        new ButtonAction();
+    }
+}
+
+
+
+
+/* import javax.swing.*;
+import java.awt.*;
+
+public class ButtonFrame3 extends JFrame {
+    private JLabel label;
+
+    public ButtonFrame3() {
+        label = new JLabel("");
+
+        JButton redButton = new JButton("RED");
+        redButton.addActionListener(e -> label.setText("RED"));
+
+        JButton blueButton = new JButton("BLUE");
+        blueButton.addActionListener(e -> label.setText("BLUE"));
+
+        JButton greenButton = new JButton("GREEN");
+        greenButton.addActionListener(e -> label.setText("GREEN"));
+
+        JPanel panel = new JPanel();
+        panel.add(redButton);
+        panel.add(blueButton);
+        panel.add(greenButton);
+        panel.add(label);
+
+        add(panel);
+        pack();
+        setVisible(true);
+    }
+
+    public static void main(String[] args) {
+        new ButtonFrame3();
+    }
+}
+ */
