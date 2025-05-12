@@ -1,0 +1,16 @@
+run java code in bash 
+
+
+tcp connection mysql server
+
+cd C:\Users\Administrator\gfg\src
+
+
+javac -classpath .;lib/mysql-connector-j-9.2.0.jar TCPServerMySQL.java
+
+java -classpath .;lib\mysql-connector-j-9.2.0.jar TCPServerMySQL
+
+
+
+javac -classpath ..\lib\mysql-connector-j-9.2.0.jar;. TCPServerMySQL.java
+java -classpath ..\lib\mysql-connector-j-9.2.0.jar;. TCPServerMySQL
